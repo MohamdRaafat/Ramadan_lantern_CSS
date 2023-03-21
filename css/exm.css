@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f1542;
+}
+
+#work {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  animation-name: fanos;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: paused; */
+}
+
+@keyframes fanos {
+  0% {
+    transform: rotate(7deg);
+  }
+
+  50% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(7deg);
+  }
+}
+
+.fan {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.wire {
+  width: 12px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #261647;
+  border: 5px #0c032e solid;
+
+}
+
+#cl {
+
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  height: 310px;
+  width: 310px;
+  bottom: -115px;
+}
+
+.light {
+  padding: 30PX;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 100%;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background: rgba(255, 155, 0, 0.08);
+  /* border-radius: 100%; */
+}
+
+@keyframes flash {
+  0% {
+    background: rgba(255, 155, 0, 0.08);
+
+  }
+
+  50% {
+    background: rgba(255, 155, 0, 0.04);
+
+  }
+
+  100% {
+    background: rgba(255, 155, 0, 0.08);
+
+  }
+}
+
+.small-circle {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-color: #261647;
+  border: 5px #0c032e solid;
+  border-radius: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.half-circle {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background-color: #40315a;
+  border: 5px #0c032e solid;
+  border-radius: 100%;
+  position: absolute;
+
+  left: 30%;
+  bottom: 160px;
+  z-index: 1;
+}
+
+.fanos {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 175px;
+  left: 50px;
+  width: 200px;
+  height: 30px;
+  background: #261647;
+  border: 5px #0c032e solid;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 3px;
+  z-index: 4;
+
+}
+
+span {
+  margin: auto 5px;
+  display: inline-block;
+  background: #40315a;
+  border: 5px #0c032e solid;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+
+}
+
+.cir {
+  width: 200px;
+  height: 0;
+  position: relative;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 30px solid #0c032e;
+  left: 45px;
+  top: 85px;
+  z-index: 6;
+
+}
+
+.cir::after {
+  content: "";
+  width: 145px;
+  left: -10px;
+  top: 5px;
+
+  height: 0;
+  position: absolute;
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #40315a;
+
+}
+
+#box {
+  width: 170px;
+  height: 180px;
+  margin: 0 auto;
+  border-left: 5px solid #0c032e;
+  border-right: 5px solid #0c032e;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  top: 85px;
+}
+
+.col {
+  width: 85px;
+  height: 180px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  border-left: 5px solid #0c032e;
+  border-right: 5px solid #0c032e;
+}
+
+.candel {
+  width: 30px;
+  height: 60px;
+  background-color: white;
+  border: 5px #0c032e solid;
+  border: 5px #0c032e solid;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 65px;
+
+}
+
+.candel::after {
+  content: "";
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  background: #ff9b00;
+  top: -20px;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: 5px #0c032e solid;
+
+}
+
+.final {
+  margin: 0 auto;
+  position: relative;
+  top: 85px;
+  width: 200px;
+  height: 30px;
+  background: #261647;
+  border: 5px #0c032e solid;
+
+}
+
+.fin {
+  width: 245px;
+  height: 0;
+  margin: 0 auto;
+  position: relative;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #0c032e;
+  top: 80px;
+  z-index: 6;
+}
+
+.fin::after {
+  content: "";
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #40315a;
+  width: 190px;
+  height: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+
+}
+
+
+/* #bottom-quppa{
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  z-index: 3;
+}
+#line {
+  margin: 0 auto;
+  width: 200px;
+  height: 30px;
+  padding-top: 3px;
+  background: #261647;
+  border: 5px #0c032e solid;
+  text-align: center;
+  overflow: hidden;
+}
+#line .ball {
+  width: 15px;
+  height: 15px;
+  margin: auto 5px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #40315a;
+  border: 5px #0c032e solid;
+} */
